@@ -36,6 +36,7 @@ type MetricsBatch struct {
 // PodMetricsPoint contains the metrics for some pod's containers.
 type PodMetricsPoint struct {
 	Containers map[string]MetricsPoint
+	Pod        MetricsPoint
 }
 
 // MetricsPoint represents the a set of specific metrics at some point in time.
